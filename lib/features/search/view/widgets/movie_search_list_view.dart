@@ -4,10 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:movies_app/core/utils/app_colors.dart';
 import 'package:movies_app/core/utils/app_styles.dart';
-import 'package:movies_app/features/genre_movies/view_model/genere_movies_listview.dart/genre_movies_listview_cubit.dart';
 import 'package:movies_app/features/movie_details/view/movie_details_view.dart';
 import 'package:movies_app/features/search/view_model/movie_search_listview_cubit.dart/movie_search_listview_cubit.dart';
-import 'package:movies_app/features/watchlist/view/widgets/watch_list_item.dart';
 import 'package:movies_app/models/movie_details_model/movie_details_model.dart';
 
 class MovieSearchListView extends StatefulWidget {
@@ -24,7 +22,6 @@ class MovieSearchListView extends StatefulWidget {
 }
 
 class _MovieSearchListViewState extends State<MovieSearchListView> {
-  // void fetchMoreData() async {
   late ScrollController controller;
   @override
   void initState() {
@@ -63,9 +60,9 @@ class _MovieSearchListViewState extends State<MovieSearchListView> {
                   Navigator.pushNamed(context, MovieDetailsView.routeName,
                       arguments: widget.movies[index]);
                 },
-                child: WatchListItem(
-                  movie: widget.movies[index],
-                ),
+                // child: WatchListItem(
+                //   movie: widget.movies[index],
+                // ),
               );
             },
           ),

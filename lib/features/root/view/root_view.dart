@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/features/home/view/home_view.dart';
 import 'package:movies_app/features/root/view/widgets/custom_navigation_bar.dart';
 
+import '../../browse/view/browse_view.dart';
+import '../../search/view/search_view.dart';
+
 class RootView extends StatefulWidget {
   static String routeName = "rootScreen";
 
@@ -17,7 +20,7 @@ class _RootViewState extends State<RootView> {
     HomeView(),
     SearchView(),
     BrowseView(),
-    WatchlistView(),
+    // WatchlistView(),
   ];
   @override
   Widget build(BuildContext context) {

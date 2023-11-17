@@ -2,8 +2,9 @@ import 'dart:io';
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:movies_app/features/services/api_services.dart';
 import 'package:movies_app/models/movie_details_model/movie_details_model.dart';
+
+import '../../../../services/api_services.dart';
 
 part 'top_rated_movies_state.dart';
 
