@@ -1,6 +1,6 @@
 class ApiConstants {
   static const String baseUrl = "api.themoviedb.org";
-  static const String apiKey = "a773aa9478c622f5ddcf6c7fae5bc271";
+  static const String apiKey = "ed29096e732e830a5702e56d86f0042f";
   static const String movieEndPoint = "/3/movie/";
   static const String popularEndPoint = "/3/movie/popular";
   static const String upcomingEndPoint = "/3/movie/upcoming";

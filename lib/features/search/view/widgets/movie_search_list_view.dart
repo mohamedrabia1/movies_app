@@ -8,6 +8,8 @@ import 'package:movies_app/features/movie_details/view/movie_details_view.dart';
 import 'package:movies_app/features/search/view_model/movie_search_listview_cubit.dart/movie_search_listview_cubit.dart';
 import 'package:movies_app/models/movie_details_model/movie_details_model.dart';
 
+import '../../../watchlist/view/widgets/watch_list_item.dart';
+
 class MovieSearchListView extends StatefulWidget {
   final List<MovieDetails> movies;
   final String searchQuery;
@@ -60,9 +62,9 @@ class _MovieSearchListViewState extends State<MovieSearchListView> {
                   Navigator.pushNamed(context, MovieDetailsView.routeName,
                       arguments: widget.movies[index]);
                 },
-                // child: WatchListItem(
-                //   movie: widget.movies[index],
-                // ),
+                child: WatchListItem(
+                  movie: widget.movies[index],
+                ),
               );
             },
           ),
